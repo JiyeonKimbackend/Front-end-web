@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- html버전 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>첫번째 HTML입니다</title>
+</head>
+<body>
+ 
+<!-- http://localhost:8888/front/html/basic.html요청 -->
+<!-- 
+마크업언어 : 태그(시작태그와 종료태그)로 구성된 언어
+HTML : Hyper Text Markup Language
+-->
+
+<h1>basic.html문서입니다</h1>
+<h3>찰리와 초콜릿 공장</h3>
+
+<p style="background-color:#D9CDBF">전 세계 누구에게나 사랑 받는 세계 최고의 초콜릿 공장인 '윌리 웡카 초콜릿 공장'.
+</p>
+<p style="color:SaddleBrown">매일  
+<br>엄청난 양의
+	<a href="https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%9C%EB%A6%BF">
+	'초콜릿'
+	</a>을 생산해 세계 각국으로 운반하고 있지만 그 누구도 공장을 드나 드는 사람을 본 적이 없는 비밀의 공간이다.
+</p>
+<p style="background-color:#8C775E;color:White;">공장보다 더 신비로운 수수께끼는 초콜릿 공장의 공장장인 <br>윌리 웡카(조니 뎁)라는 인물.
+</p>
+<p>
+	<a href="http://localhost:8888/front/html/profile.html">프로필</a>
+	<a href="./self-introduction.html" target="_blank">자기소개서</a> <!-- 상대경로, 43번라인과 같음 -->
+	<a href="self-introduction.html" target="_blank">자기소개서</a>
+	<a href="/front/html/self-introduction.html" target="_blank">자기소개서</a> <!-- 현재 사용중인 웹프로젝트의 하위경로 -->
+</p>
+<p>
+	<img src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20111222_261%2F13245430682932bCeX_JPEG%2Fmovie_image.jpg"
+		alt="찰리와 초콜릿 공장"
+		width="200"
+		height="200">
+	<img src="../images/movie_image.jpg"
+		alt="찰리와 초콜릿공장"
+		width="200">
+	<img src="/front/images/movie_image.jpg"
+		alt="찰리와 초콜릿공장"
+		width="20%"> <!-- 픽셀이 아닌 비율로 이미지 조정 -->
+</p>
+
+<!-- <table border="1" width="500"> -->	
+<table style="border:1px solid;width:50%;">
+	<thead>
+		<tr><th style="border:1px dotted;">종류</th><th>원산지</th></tr>
+	</thead>
+	<tbody>
+		<tr><td rowspan="2" style="border:1px dotted;">녹차</td><td style="border:1px solid;">보성</td></tr> <!-- rowspan 행병합 -->
+		<tr>														<td style="border:1px solid;">제주</td></tr>
+		<tr><td>우롱차</td><td>제주</td></tr>
+		
+		<tr><td>오렌지</td><td>캘리포니아</td></tr>
+		<tr><td>키위</td><td>제주</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan="2" style="border:1px dotted;">맺음말</td></tr>
+	</tfoot>
+</table>
+
+<table style="border:1px solid;width:50%;"> <!-- thead, tbody, tfoot 생략하여 tbody로 자동처리-->
+	
+		<tr><th style="border:1px dotted;">종류</th><th>원산지</th></tr>
+		<tr><td rowspan="2" style="border:1px dotted;">녹차</td><td style="border:1px solid;">보성</td></tr> <!-- rowspan 행병합 -->
+		<tr>														<td style="border:1px solid;">제주</td></tr>
+		<tr><td>우롱차</td><td>제주</td></tr>
+		<tr><td>오렌지</td><td>캘리포니아</td></tr>
+		<tr><td>키위</td><td>제주</td></tr>
+		<tr><td colspan="2" style="border:1px dotted;">맺음말</td></tr>
+
+</table>
+
+	<ol>
+		<li>정치</li>
+		<li>경제</li>
+		<li>사회</li>
+	</ol>
+	<ul>
+		<li>정치</li>
+		<li>경제</li>
+		<li>사회</li>
+	</ul>
+
+<address>
+2022 J Enterprise. All Rights Reserved.
+</address>
+
+
+</body>
+</html>
